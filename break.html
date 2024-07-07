@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Breakout Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameCanvasContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="scoreDisplay">Score: <span id="score">0</span></div>
+        <div id="livesDisplay">Lives: <span id="lives">3</span></div>
+        <div class="levelDisplay" id="levelDisplay">Level: 1</div>
+    </div>
+    <div id="overlay">
+        <h1 id="overlayMessage">Welcome to Ultimate Breakout!</h1>
+        <button id="startButton">Start Game</button>
+        <button id="restartButton">Restart Level</button>
+    </div>
+    <audio id="collisionSound" src="collision.mp3"></audio>
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="gameOverSound" src="gameover.mp3"></audio>
+    <audio id="powerupSound" src="powerup.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
